@@ -77,7 +77,7 @@ The output is:
 | 0011110011000011 | 1100001100111100 |
 | 0001001000110100 | 1110110111001011 |
 
-## Building a Multi-Bit And and Or
+## Building a Multi-Bit And and Or (And16 and Or16)
 
 Here we require 2 16-bit input buses, 16 binary AND (or OR gates) gates and 1 16-bit output bus.
 
@@ -109,6 +109,33 @@ CHIP Or16 {
 }
 ```
 
+## Multi-Bit Multiplexor (Mux16)
+
+Note that this time we need 3 inputs per bit (a,b,selector)
+```
+CHIP Mux16 {
+    IN a[16], b[16], sel;
+    OUT out[16];
+
+    PARTS:
+    Mux(a=a[0],b=b[0],sel=sel,out=out[0]);
+	Mux(a=a[1],b=b[1],sel=sel,out=out[1]);
+	Mux(a=a[2],b=b[2],sel=sel,out=out[2]);
+	Mux(a=a[3],b=b[3],sel=sel,out=out[3]);
+	Mux(a=a[4],b=b[4],sel=sel,out=out[4]);
+	Mux(a=a[5],b=b[5],sel=sel,out=out[5]);
+	Mux(a=a[6],b=b[6],sel=sel,out=out[6]);
+	Mux(a=a[7],b=b[7],sel=sel,out=out[7]);
+	Mux(a=a[8],b=b[8],sel=sel,out=out[8]);
+	Mux(a=a[9],b=b[9],sel=sel,out=out[9]);
+	Mux(a=a[10],b=b[10],sel=sel,out=out[10]);
+	Mux(a=a[11],b=b[11],sel=sel,out=out[11]);
+	Mux(a=a[12],b=b[12],sel=sel,out=out[12]);
+	Mux(a=a[13],b=b[13],sel=sel,out=out[13]);
+	Mux(a=a[14],b=b[14],sel=sel,out=out[14]);
+	Mux(a=a[15],b=b[15],sel=sel,out=out[15]);
+}
+```
 
 
 
