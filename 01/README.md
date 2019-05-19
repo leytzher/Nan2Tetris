@@ -17,4 +17,13 @@ This can be built with 4 Nand gates.
 ## Building a Multiplexor
 This is a three-input gate that uses one of its inputs , called "selection bit", to select and outputs one of the other two inputs called "data bits".
 
+This can be summarized as:
 
+```
+    if sel = 0 :
+        out=a
+    else:
+        out=b
+```
+
+![MUX](img/img3.png)
