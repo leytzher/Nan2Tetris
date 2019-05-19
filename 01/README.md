@@ -163,3 +163,11 @@ Selects one of the 4 16-bits input buses and outputs it into a single 16-bit out
 ### 8 way 16 bit Mux (Mux8Way16)
 Selects one of the 8 16-bits input buses and outputs it into a single 16-bit output bus.
 ![Mux4Way16](img/img6.png)
+
+## Multi-way/Multi-bit Demultiplexor
+
+### 4 way 1-bit Demux (DMux4Way)
+Channels a single 16-bit input into one of 4 possible 16-bit outputs
+### 8-way 1-bit Demux (DMux8Way)
+Channels a single 16-bit input into one of 8 possible 16-bit outputs
+![DMux4](img/img7.png)
