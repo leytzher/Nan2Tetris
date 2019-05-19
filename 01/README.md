@@ -137,5 +137,29 @@ CHIP Mux16 {
 }
 ```
 
+## Multi-Way Or (Or8Way)
+
+This chip outputs 1 when at least one of its 8 bits inputs 1, and 0 otherwise.
+
+|     in     | out |
+|:----------------:|:----------------:|
+|  00000000  |  0  |
+|  11111111  |  1  |
+|  00010000  |  1  |
+|  00000001  |  1  |
+|  00100110  |  1  |
 
 
+![Or8Way](img/img5.png)
+
+
+
+## Multi-way/Multi-Bit Multiplexor
+
+
+### 4 way 16 bit Mux (Mux4Way16)
+Selects one of the 4 16-bits input buses and outputs it into a single 16-bit output bus.
+
+### 8 way 16 bit Mux (Mux8Way16)
+Selects one of the 8 16-bits input buses and outputs it into a single 16-bit output bus.
+![Mux4Way16](img/img6.png)
