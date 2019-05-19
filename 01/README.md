@@ -14,7 +14,7 @@ This can be built with 4 Nand gates.
 
 ![XOR](img/img2.png)
 
-## Building a Multiplexor
+## Building a Multiplexor (Mux)
 This is a three-input gate that uses one of its inputs , called "selection bit", to select and outputs one of the other two inputs called "data bits".
 
 This can be summarized as:
@@ -27,3 +27,12 @@ This can be summarized as:
 ```
 
 ![MUX](img/img3.png)
+
+## Building a Demultiplexor (DMux)
+This performs the opposite function of a Mux. It takes a single input and channels it to one of 2 possible outputs according to a selector bit that specifies which output to choose.
+
+we can build a DMux using 5 Nand gates:
+
+![DMUX](img/img4.png)
+
+
