@@ -47,3 +47,18 @@ For the carry out bit, we combine the carry bit of the first Half adder with the
 |   1   |   1   |   0   |   0   |   1   |
 |   1   |   1   |   1   |   1   |   1   |
 ```
+
+## Add16
+
+This circuit is built with a combination of half adder to add the least significant bit and a series of full adders to take the carry bits during the operation.
+The most significant bit is discarded so the operation always returns a 16-bit number.
+
+```
+|        a         |        b         |       out        |
+| 0000000000000000 | 0000000000000000 | 0000000000000000 |
+| 0000000000000000 | 1111111111111111 | 1111111111111111 |
+| 1111111111111111 | 1111111111111111 | 1111111111111110 |
+| 1010101010101010 | 0101010101010101 | 1111111111111111 |
+| 0011110011000011 | 0000111111110000 | 0100110010110011 |
+| 0001001000110100 | 1001100001110110 | 1010101010101010 |
+```
